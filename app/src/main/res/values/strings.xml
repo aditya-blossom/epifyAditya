@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">epiFi Aditya</string>
+    <string name="go_to_test_activity">Go to test activity</string>
+    <string name="s">S.</string>
+    <string name="first_of_the_few_steps_to_set_nyou_up_with_a_bank_account">First of the few steps to set\nyou up with a Bank Account</string>
+    <string name="next">NEXT</string>
+    <string name="pan_number">PAN NUMBER</string>
+    <string name="birthdate">BIRTHDATE</string>
+    <string name="dd">DD</string>
+    <string name="mm">MM</string>
+    <string name="yyyy">YYYY</string>
+    <string name="type_here">Type here</string>
+</resources>

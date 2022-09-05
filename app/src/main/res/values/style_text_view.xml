@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.25</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="TextView.color_ORANGE">
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="TextView.color_GRAY2">
+        <item name="android:textColor">@color/gray2</item>
+    </style>
+
+
+
+    <style name="TextView.color_BLACK">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.color_PURPLE700">
+        <item name="android:textColor">@color/purple_700</item>
+    </style>
+
+
+
+
+    <style name="TextView.color_ORANGE.font_24sp">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextView.color_BLACK.font_24sp">
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="TextView.color_BLACK.font_16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+
+
+
+</resources>

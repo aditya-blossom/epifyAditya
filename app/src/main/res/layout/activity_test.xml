@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    tools:context=".ui.TestActivity">
+
+    <TextView
+        android:id="@+id/tvTitle1"
+        style="@style/TextView.color_ORANGE.font_24sp"
+        android:text="@string/s"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/CustomTextAppearance.Bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvTitle2"
+        style="@style/TextView.color_BLACK.font_24sp"
+        android:text="@string/first_of_the_few_steps_to_set_nyou_up_with_a_bank_account"
+        android:textAppearance="@style/CustomTextAppearance.Bold"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tvDisclaimer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle2">
+
+        <TextView
+            android:id="@+id/tvPAN"
+            style="@style/TextView.color_GRAY2"
+            android:text="@string/pan_number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/etPanNumber"
+            style="@style/TextView.color_BLACK.font_16sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/type_here"
+            android:inputType="textCapCharacters"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/color_A3AAB8"
+            android:textSize="16sp"
+            tools:ignore="TextFields" />
+
+        <TextView
+            android:id="@+id/tvBirthdate"
+            style="@style/TextView.color_GRAY2"
+            android:layout_marginTop="24dp"
+            android:text="@string/birthdate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/etDate"
+                style="@style/TextView.color_BLACK.font_16sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="28dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background"
+                android:gravity="center"
+                android:hint="@string/dd"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="2"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_A3AAB8"
+                android:textSize="16sp"
+                tools:ignore="TextFields" />
+
+            <EditText
+                android:id="@+id/etMonth"
+                style="@style/TextView.color_BLACK.font_16sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="28dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background"
+                android:gravity="center"
+                android:hint="@string/mm"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="2"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_A3AAB8"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etYear"
+                style="@style/TextView.color_BLACK.font_16sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background"
+                android:gravity="center"
+                android:hint="@string/yyyy"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="4"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_A3AAB8"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/btNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/next"
+        app:layout_constraintBottom_toTopOf="@+id/tvNoPAN_CARD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/tvNoPAN_CARD"
+        style="@style/TextView.color_PURPLE700"
+        android:text="I don't have a PAN"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvDisclaimer"
+        style="@style/TextView"
+        android:text="Providing Pan and Date of Birth helps us find and \nfetch your KYC from a central registry by the \nGovernment of India. Learn more "
+        android:layout_marginBottom="12dp"
+        android:textColorLink="@color/purple_500"
+        android:textColor="@color/gray2"
+        app:layout_constraintBottom_toTopOf="@+id/btNext"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
